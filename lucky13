@@ -1,0 +1,15 @@
+public boolean lucky13(int[] nums) {
+  boolean isOne = true;;
+  boolean isThree = true;;
+  for(int num : nums){
+    if(num == 1){
+      isOne = false;
+    }
+    if(num == 3){
+      isThree = false;;
+    }
+  }
+  
+  return isOne && isThree;
+  
+}
