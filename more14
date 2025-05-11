@@ -1,0 +1,13 @@
+public boolean more14(int[] nums) {
+  int one = 0;
+  int four = 0;
+  for(int num : nums){
+    if(num == 1){
+      one++;
+    }
+    if(num == 4){
+      four++;
+    }
+  }
+  return one > four? true : false;
+}
