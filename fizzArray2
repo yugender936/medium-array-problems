@@ -1,0 +1,8 @@
+public String[] fizzArray2(int n) {
+  String[] arr = new String[n];
+  for(int i = 0 ; i < n ; i++){
+    String str = String.valueOf(i);
+    arr[i] = str;
+  }
+  return arr;
+}
