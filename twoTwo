@@ -1,0 +1,20 @@
+public boolean twoTwo(int[] nums) {
+  for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 2) {
+                // Check if the current 2 has another 2 next to it
+                boolean hasNeighbor = false;
+                if (i > 0 && nums[i - 1] == 2) {
+                    hasNeighbor = true;
+                }
+                if (i < nums.length - 1 && nums[i + 1] == 2) {
+                    hasNeighbor = true;
+                }
+
+                if (!hasNeighbor) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+}
