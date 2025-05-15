@@ -1,0 +1,21 @@
+public int[] tenRun(int[] nums) {
+  if(nums.length < 2){
+    return nums;
+  }
+  int i = 0;
+  while(i < nums.length){
+    
+    if(nums[i] % 10 == 0){
+      int j = i+1;
+      while(j < nums.length-1 && nums[j] % 10 != 0){
+        nums[j] = nums[i];
+        j++;
+      }
+    }
+    i++;
+  }
+  if(nums[nums.length-2] % 10 == 0 && nums[nums.length-1] % 10 != 0){
+    nums[nums.length-1] = nums[nums.length-2];
+  }
+  return nums;
+}
