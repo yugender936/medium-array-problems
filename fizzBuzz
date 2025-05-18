@@ -1,0 +1,23 @@
+public String[] fizzBuzz(int start, int end) {
+  int j = 0;
+  String[] str = new String[end-start];
+  for(int i = start ; i < end ; i++){
+    if(i % 3 == 0 && i % 5 == 0){
+      str[j] = "FizzBuzz";
+      j++;
+    }
+    else if(i % 3 == 0){
+      str[j] = "Fizz";
+      j++;
+    }
+    else if(i % 5 == 0){
+      str[j] = "Buzz";
+      j++;
+    }
+    else{
+      str[j] = String.valueOf(i);
+      j++;
+    }
+  }
+  return str;
+}
