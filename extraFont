@@ -1,0 +1,6 @@
+public String extraFront(String str) {
+  if(str.length() < 2){
+    return ""+str+str+str;
+  }
+  return ""+str.charAt(0)+str.charAt(1)+str.charAt(0)+str.charAt(1)+str.charAt(0)+str.charAt(1);
+}
